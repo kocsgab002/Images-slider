@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: #dadada;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 1% auto;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container .big {
+    margin: 2%;
+    display: flex;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 30%);
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.container .big .leftny,
+.container .big .rightny {
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.big ion-icon {
+    font-size: 60px;
+    margin: 30px;
+    color: dimgrey;
+    cursor: pointer;
+    z-index: 100;
+    transition: .5s;
+}
+
+.big ion-icon:hover {
+    scale: 1.3;
+}
+
+.container .big .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container .big .main-content .mainpic {
+    display: block;
+    width: 100%;
+}
+
+
+.container .big .main-content .maintext {
+    display: block;
+    background: #222222b9;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+.maintext h1 {
+    font-size: 36px;
+    display: inline-block;
+    padding: 16px 0;
+}
+
+.maintext p {
+    font-size: 24px;
+}
+
+.container .small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .small .smallpic {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.container .small .smallpic:hover {
+    scale: 1.05;
+    transform: translateY(-10px);
+}
+
+.container .small img {
+    display: block;
+    width: 180px;
+}
